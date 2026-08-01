@@ -18,10 +18,23 @@ router.post(
 );
 
 // @route   GET api/posts
-// @desc    Get all posts
+// @desc    Tüm postları getir
 // @access  Public
-router.get('/', (req, res) => {
-    res.send('Get all posts');
-});
+router.get('/', postController.getAllPosts);
+
+// @route   GET api/posts/:id
+// @desc    ID ile tek bir post getir
+// @access  Public
+router.get('/:id', postController.getPostById);
+
+// @route   PUT api/posts/:id
+// @desc    Bir postu güncelle
+// @access  Private
+router.put('/:id', authMiddleware, postController.updatePost);
+
+// @route   DELETE api/posts/:id
+// @desc    Bir postu sil
+// @access  Private
+router.delete('/:id', authMiddleware, postController.deletePost);
 
 module.exports = router;
