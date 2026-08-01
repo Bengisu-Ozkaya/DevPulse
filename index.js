@@ -14,8 +14,9 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('Blog API Çalışıyor'));
 
 // Rotaları Tanımla
-app.use('/api/users', require('./routes/user.routes'));
+// app.use('/api/users', require('./routes/user.routes')); // Henüz oluşturulmadığı için geçici olarak kapatıldı
 app.use('/api/posts', require('./routes/post.routes'));
+app.use('/api/auth', require('./routes/auth.routes'));
 
 const PORT = process.env.PORT || 5000;
 

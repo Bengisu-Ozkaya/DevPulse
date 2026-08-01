@@ -1,7 +1,6 @@
 // .env dosyanıza MONGO_URI="your_mongodb_connection_string" ekleyin
 // Örnek: MONGO_URI="mongodb://localhost:27017/blogDB"
 const mongoose = require('mongoose');
-require('dotenv').config();
 
 const connectDB = async () => {
     try {

@@ -1,0 +1,12 @@
+# Bağımlılıklar (Kesinlikle Git'e gitmemeli)
+node_modules/
+
+# Ortam Değişkenleri (Gizli veriler & anahtarlar)
+.env
+.env.local
+
+# Sistem Dosyaları & Loglar
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
