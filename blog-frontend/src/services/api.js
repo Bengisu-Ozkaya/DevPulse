@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api'; // Adjust the URL if your backend is on a different port
+const API_URL = 'https://devpulse-backend-1gpf.onrender.com'; // Adjust the URL if your backend is on a different port
 
 const api = axios.create({
   baseURL: API_URL,
