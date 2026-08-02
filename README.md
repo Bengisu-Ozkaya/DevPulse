@@ -130,7 +130,7 @@ npm install
 ```
 
 ### 4. Ortam değişkenlerini ayarlayın
-`DevPulse/.env` veya `DevPulse/blog-frontend/.env` içinde aşağıdaki değişkenleri yapılandırın:
+`DevPulse/.env` içinde aşağıdaki değişkenleri yapılandırın:
 
 ```env
 MONGO_URI=your_mongo_connection_string
@@ -178,16 +178,15 @@ npm run dev
 
 ## 🌐 Canlı Demo
 
-- Frontend: `https://your-frontend-url.vercel.app`
-- Backend: `https://your-backend-url.onrender.com`
-
-> Canlı demo linklerini kendi yayınladığınız adreslerle güncelleyin.
+- Frontend: `https://your-frontend-url.vercel.app](https://devpulse-frontend.netlify.app/`
+- Backend: `[https://your-backend-url.onrender.com](https://devpulse-backend-1gpf.onrender.com)`
+- 
 
 ---
 
 ## 🤝 İletişim
 
-- GitHub: [github.com/kullanici-adi](https://github.com/Bengisu-Ozkaya)
+- GitHub: `https://github.com/Bengisu-Ozkaya`
 - E-posta: `bngs050621@gmail.com`
 - LinkedIn: `www.linkedin.com/in/bengisu-özkaya-b1a552372`
 
