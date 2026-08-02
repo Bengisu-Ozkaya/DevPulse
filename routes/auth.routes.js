@@ -3,7 +3,7 @@ const router = express.Router();
 const { check } = require('express-validator');
 const authController = require('../controllers/auth.controller');
 const authMiddleware = require('../middleware/authMiddleware');
-const User = require('../models/User.model');
+const User = require('../models/user.model');
 
 // @route   POST api/auth/register
 // @desc    Kullanıcı kaydı
