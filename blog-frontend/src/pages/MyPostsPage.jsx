@@ -26,8 +26,8 @@ const MyPostsPage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8 text-center">
-        <h1 className="text-4xl font-extrabold text-gray-800 mb-2">Yazılarım</h1>
-        <p className="text-gray-600">Yayınladığınız tüm yazılar.</p>
+        <h1 className="text-4xl font-extrabold text-black mb-2">Yazılarım</h1>
+        <p className="text-meta">Yayınladığınız tüm yazılar.</p>
       </div>
 
       {loading && <p className="text-center">Yükleniyor...</p>}

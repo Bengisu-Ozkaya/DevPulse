@@ -31,43 +31,43 @@ const CreatePost = () => {
 
   return (
     <div className="container mx-auto max-w-3xl py-10 px-4">
-      <h1 className="text-4xl font-bold text-gray-800 mb-8">Create New Post</h1>
-      <div className="bg-white p-8 rounded-lg shadow-md">
+      <h1 className="text-4xl font-bold text-main mb-8">Create New Post</h1>
+      <div className="bg-card p-8 rounded-lg shadow-md">
         <form onSubmit={handleSubmit}>
-          {error && <div className="bg-red-100 text-red-700 p-3 rounded-md mb-6">{error}</div>}
+          {error && <div className="bg-red-900 text-red-200 p-3 rounded-md mb-6">{error}</div>}
           
           <div className="mb-6">
-            <label htmlFor="title" className="block text-gray-700 font-semibold mb-2">Title</label>
+            <label htmlFor="title" className="block text-secondary font-semibold mb-2">Title</label>
             <input
               type="text"
               id="title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200"
+              className="w-full px-4 py-2 bg-input text-main border border-custom rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-shadow duration-200"
               placeholder="Your post title"
             />
           </div>
 
           <div className="mb-6">
-            <label htmlFor="category" className="block text-gray-700 font-semibold mb-2">Category</label>
+            <label htmlFor="category" className="block text-secondary font-semibold mb-2">Category</label>
             <input
               type="text"
               id="category"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200"
+              className="w-full px-4 py-2 bg-input text-main border border-custom rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-shadow duration-200"
               placeholder="e.g., Technology, Lifestyle"
             />
           </div>
 
           <div className="mb-8">
-            <label htmlFor="content" className="block text-gray-700 font-semibold mb-2">Content</label>
+            <label htmlFor="content" className="block text-secondary font-semibold mb-2">Content</label>
             <textarea
               id="content"
               value={content}
               onChange={(e) => setContent(e.target.value)}
               rows="10"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200"
+              className="w-full px-4 py-2 bg-input text-main border border-custom rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-shadow duration-200"
               placeholder="Write your amazing post here..."
             ></textarea>
           </div>
@@ -75,7 +75,7 @@ const CreatePost = () => {
           <div className="flex justify-end">
             <button
               type="submit"
-              className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300"
+              className="bg-brand text-main font-bold py-3 px-6 rounded-lg hover:bg-accent-dark focus:outline-none focus:ring-4 focus:ring-brand transition-all duration-300"
             >
               Publish Post
             </button>

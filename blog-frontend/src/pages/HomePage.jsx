@@ -31,15 +31,15 @@ const HomePage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8 text-center">
-        <h1 className="text-4xl font-extrabold text-gray-800 mb-2">Blog Yazıları</h1>
-        <p className="text-gray-600">En son yazıları keşfedin.</p>
+        <h1 className="text-4xl font-extrabold text-main mb-2">Blog Yazıları</h1>
+        <p className="text-meta">En son yazıları keşfedin.</p>
       </div>
 
       <div className="mb-8">
         <input
           type="text"
           placeholder="Yazı ara..."
-          className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="w-full px-4 py-2 bg-white border border-meta rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-brand text-black placeholder-meta"
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>

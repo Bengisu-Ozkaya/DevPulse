@@ -38,17 +38,17 @@ const PostDetailPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+      <div className="max-w-4xl mx-auto bg-highlight rounded-lg shadow-lg p-8">
         <div className="mb-8">
-          <Link to="/" className="text-indigo-600 hover:underline mb-4 block">&larr; Geri Dön</Link>
-          <h1 className="text-4xl font-extrabold text-gray-900 mb-2">{post.title || 'Başlık Yok'}</h1>
-          <div className="flex items-center text-sm text-gray-500">
-            <span>{post.author?.username || 'Bilinmeyen Yazar'}</span>
+          <Link to="/" className="text-accent-green hover:underline mb-4 block">&larr; Geri Dön</Link>
+          <h1 className="text-4xl font-extrabold text-black mb-2">{post.title || 'Başlık Yok'}</h1>
+          <div className="flex items-center text-sm text-meta">
+            <span>{post.authorId?.name || 'Bilinmeyen Yazar'}</span>
             <span className="mx-2">&bull;</span>
             <span>{post.createdAt ? new Date(post.createdAt).toLocaleDateString() : 'N/A'}</span>
           </div>
         </div>
-        <div className="prose lg:prose-xl max-w-none text-gray-800 whitespace-normal break-words">
+        <div className="prose lg:prose-xl max-w-none text-black whitespace-normal break-words">
           <p>{post.content || 'İçerik bulunamadı.'}</p>
         </div>
       </div>
