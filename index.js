@@ -13,7 +13,9 @@ app.use(express.json({ extended: false }));
 
 // CORS Middleware'i
 app.use(cors({
-  origin: 'http://localhost:5173'
+  origin: ['http://localhost:5173',
+    'https://devpulse-frontend.netlify.app'
+  ]
 }));
 
 // Ana Rota
