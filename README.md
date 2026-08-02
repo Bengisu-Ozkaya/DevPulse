@@ -162,13 +162,17 @@ npm run dev
 > Aşağıdaki alanlara proje ekran görüntülerini ekleyebilirsiniz.
 
 ### Ana Sayfa
-![Ana Sayfa](./screenshots/home.png)
+![Ana Sayfa]()
 
-### Yazı Detayı
-![Yazı Detayı](./screenshots/post-detail.png)
+### Yazı Detayı  
+![Yazı Detayı]()
+
+### Yazı Düzenleme
+![Yazı Düzenleme](C:\Users\bngs0\OneDrive\Masaüstü\DEVPULSE\f5.png)
 
 ### Kayıt / Giriş
-![Auth Ekranı](./screenshots/auth.png)
+![Auth Ekranı]()
+
 
 ---
 
@@ -183,9 +187,9 @@ npm run dev
 
 ## 🤝 İletişim
 
-- GitHub: [github.com/kullanici-adi](https://github.com/kullanici-adi)
-- E-posta: `ornek@eposta.com`
-- LinkedIn: `https://www.linkedin.com/in/kullanici-adi/`
+- GitHub: [github.com/kullanici-adi](https://github.com/Bengisu-Ozkaya)
+- E-posta: `bngs050621@gmail.com`
+- LinkedIn: `www.linkedin.com/in/bengisu-özkaya-b1a552372`
 
 ---
 
