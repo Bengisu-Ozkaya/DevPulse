@@ -76,7 +76,7 @@ const EditPostPage = () => {
           </div>
 
           <div className="flex justify-end">
-            <button type="submit" className="bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-heading focus:outline-none focus:ring-4 focus:ring-accent/50 transition-all duration-300">
+            <button type="submit" className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-white bg-heading rounded-lg hover:bg-heading-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card-bg focus:ring-heading transition-all">
               Değişiklikleri Kaydet
             </button>
           </div>
