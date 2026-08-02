@@ -183,9 +183,9 @@ npm run dev
 
 ## 🤝 İletişim
 
-- GitHub: [github.com/kullanici-adi](https://github.com/kullanici-adi)
-- E-posta: `ornek@eposta.com`
-- LinkedIn: `https://www.linkedin.com/in/kullanici-adi/`
+- GitHub: [github.com/kullanici-adi](https://github.com/Bengisu-Ozkaya)
+- E-posta: `bngs050621@gmail.com`
+- LinkedIn: `www.linkedin.com/in/bengisu-özkaya-b1a552372`
 
 ---
 
