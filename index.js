@@ -1,5 +1,6 @@
 const express = require('express');
 const connectDB = require('./config/db');
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
@@ -10,6 +11,11 @@ connectDB();
 // Body Parser Middleware'i
 app.use(express.json({ extended: false }));
 
+// CORS Middleware'i
+app.use(cors({
+  origin: 'http://localhost:5173'
+}));
+
 // Ana Rota
 app.get('/', (req, res) => res.send('Blog API Çalışıyor'));
 
@@ -18,6 +24,6 @@ app.get('/', (req, res) => res.send('Blog API Çalışıyor'));
 app.use('/api/posts', require('./routes/post.routes'));
 app.use('/api/auth', require('./routes/auth.routes'));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Sunucu ${PORT} portunda başlatıldı`));

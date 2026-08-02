@@ -22,6 +22,11 @@ router.post(
 // @access  Public
 router.get('/', postController.getAllPosts);
 
+// @route   GET api/posts/my-posts
+// @desc    Giriş yapmış kullanıcının postlarını getir
+// @access  Private
+router.get('/my-posts', authMiddleware, postController.getMyPosts);
+
 // @route   GET api/posts/:id
 // @desc    ID ile tek bir post getir
 // @access  Public

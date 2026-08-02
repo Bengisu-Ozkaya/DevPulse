@@ -129,10 +129,25 @@ const deletePost = async (req, res) => {
     }
 };
 
+// @route   GET api/posts/my-posts
+// @desc    Giriş yapmış kullanıcının tüm postlarını getir
+// @access  Private
+const getMyPosts = async (req, res) => {
+    try {
+        // Postları authorId'ye göre bul, en yeniden eskiye sırala ve yazar bilgilerini ekle
+        const posts = await Post.find({ authorId: req.user.id }).populate('authorId', ['name']).sort({ createdAt: -1 });
+        res.json(posts);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Sunucu Hatası');
+    }
+};
+
 module.exports = {
     createPost,
     getAllPosts,
     getPostById,
     updatePost,
-    deletePost
+    deletePost,
+    getMyPosts
 };
