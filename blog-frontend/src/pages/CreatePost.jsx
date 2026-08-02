@@ -14,7 +14,7 @@ const CreatePost = () => {
     setError(null);
 
     if (!title || !category || !content) {
-      setError('All fields are required.');
+      setError('Başlık, kategori ve içerik alanları zorunludur.');
       return;
     }
 
@@ -31,53 +31,53 @@ const CreatePost = () => {
 
   return (
     <div className="container mx-auto max-w-3xl py-10 px-4">
-      <h1 className="text-4xl font-bold text-main mb-8">Create New Post</h1>
-      <div className="bg-card p-8 rounded-lg shadow-md">
+      <h1 className="text-4xl font-bold text-heading mb-8">Yeni Yazı Oluştur</h1>
+      <div className="bg-card/50 p-8 rounded-lg shadow-md">
         <form onSubmit={handleSubmit}>
-          {error && <div className="bg-red-900 text-red-200 p-3 rounded-md mb-6">{error}</div>}
+          {error && <div className="bg-red-500/20 text-red-800 p-3 rounded-md mb-6">{error}</div>}
           
           <div className="mb-6">
-            <label htmlFor="title" className="block text-secondary font-semibold mb-2">Title</label>
+            <label htmlFor="title" className="block text-heading/80 font-semibold mb-2">Başlık</label>
             <input
               type="text"
               id="title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full px-4 py-2 bg-input text-main border border-custom rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-shadow duration-200"
-              placeholder="Your post title"
+              className="w-full px-4 py-2 bg-app text-heading border border-card rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-shadow duration-200"
+              placeholder="Yazı başlığı"
             />
           </div>
 
           <div className="mb-6">
-            <label htmlFor="category" className="block text-secondary font-semibold mb-2">Category</label>
+            <label htmlFor="category" className="block text-heading/80 font-semibold mb-2">Kategori</label>
             <input
               type="text"
               id="category"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full px-4 py-2 bg-input text-main border border-custom rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-shadow duration-200"
-              placeholder="e.g., Technology, Lifestyle"
+              className="w-full px-4 py-2 bg-app text-heading border border-card rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-shadow duration-200"
+              placeholder="Örn: Teknoloji, Yaşam Tarzı"
             />
           </div>
 
           <div className="mb-8">
-            <label htmlFor="content" className="block text-secondary font-semibold mb-2">Content</label>
+            <label htmlFor="content" className="block text-heading/80 font-semibold mb-2">İçerik</label>
             <textarea
               id="content"
               value={content}
               onChange={(e) => setContent(e.target.value)}
               rows="10"
-              className="w-full px-4 py-2 bg-input text-main border border-custom rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-shadow duration-200"
-              placeholder="Write your amazing post here..."
+              className="w-full px-4 py-2 bg-app text-heading border border-card rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-shadow duration-200"
+              placeholder="Harika yazınızı buraya yazın..."
             ></textarea>
           </div>
 
           <div className="flex justify-end">
             <button
               type="submit"
-              className="bg-brand text-main font-bold py-3 px-6 rounded-lg hover:bg-accent-dark focus:outline-none focus:ring-4 focus:ring-brand transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-white bg-heading rounded-lg hover:bg-heading-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card-bg focus:ring-heading transition-all"
             >
-              Publish Post
+              Yazıyı Yayınla
             </button>
           </div>
         </form>

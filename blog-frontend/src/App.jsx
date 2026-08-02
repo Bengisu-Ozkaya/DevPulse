@@ -7,6 +7,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import Auth from './pages/Auth';
 import CreatePost from './pages/CreatePost';
 import MyPostsPage from './pages/MyPostsPage';
+import EditPostPage from './pages/EditPostPage';
 import ProtectedRoute from './routes/ProtectedRoute';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route element={<ProtectedRoute />}>
           <Route path="/create-post" element={<CreatePost />} />
           <Route path="/my-posts" element={<MyPostsPage />} />
+          <Route path="/edit-post/:id" element={<EditPostPage />} />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />

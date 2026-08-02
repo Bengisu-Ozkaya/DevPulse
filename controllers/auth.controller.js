@@ -15,11 +15,15 @@ const registerUser = async (req, res) => {
     const { name, email, password } = req.body;
 
     try {
-        // Kullanıcının zaten var olup olmadığını kontrol et
-        let user = await User.findOne({ email });
-
-        if (user) {
+        // Kullanıcının zaten var olup olmadığını kontrol et (email ve kullanıcı adı)
+        let userByEmail = await User.findOne({ email });
+        if (userByEmail) {
             return res.status(400).json({ errors: [{ msg: 'Bu e-posta ile bir kullanıcı zaten mevcut' }] });
+        }
+
+        let userByName = await User.findOne({ name });
+        if (userByName) {
+            return res.status(400).json({ errors: [{ msg: 'Bu kullanıcı adı zaten kullanımda' }] });
         }
 
         user = new User({
@@ -80,7 +84,7 @@ const loginUser = async (req, res) => {
         // Şifreleri karşılaştır
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
-            return res.status(400).json({ errors: [{ msg: 'Geçersiz kimlik bilgileri' }] });
+            return res.status(400).json({ errors: [{ msg: 'Geçersiz şifre' }] });
         }
 
         // JSON Web Token oluştur ve döndür

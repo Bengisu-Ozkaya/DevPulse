@@ -7,20 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#000000',
-        'card': '#263d4d',
-        'input': '#596771',
-        'accent-dark': '#466f75',
-        'brand': '#263d4d',
-        'main': '#ffffff',
-        'secondary': '#babcc6',
-        'navbar': '#5d4173',
-        'meta': '#989aab',
-        'card-border': '#845ca3',
-        'accent': '#5d4173',
-        'highlight': '#a374bb',
-        'auth-text': '#d6c6e0',
-        'input-text': '#845ca3',
+        app: '#ede8f5',
+        card: '#adbbda',
+        secondary: '#8697c4',
+        brand: '#7091e6',
+        'brand-blue': '#7091e6',
+        primary: '#7091e6',
+        main: '#3d52a0',
+        'app-hover': '#E6E1EE',
+          heading: '#3d52a0', // Keeping the original line for clarity
+          'heading-dark': '#374990',
       },
       borderColor: theme => ({
         ...theme('colors'),

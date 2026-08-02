@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const MainLayout = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-app">
       <Navbar />
       <main className="container mx-auto p-4">
         <Outlet />
