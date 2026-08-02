@@ -1,6 +1,6 @@
 const { validationResult } = require('express-validator');
 const Post = require('../models/post.model');
-const User = require('../models/User.model');
+const User = require('../models/user.model');
 
 // @route   POST api/posts
 // @desc    Yeni bir post oluştur
