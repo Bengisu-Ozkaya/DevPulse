@@ -162,16 +162,16 @@ npm run dev
 > Aşağıdaki alanlara proje ekran görüntülerini ekleyebilirsiniz.
 
 ### Ana Sayfa
-![Ana Sayfa]()
+<img width="958" height="403" alt="Image" src="https://github.com/user-attachments/assets/65f03a45-9b06-49a7-af38-fe5409ab8193" />
 
 ### Yazı Detayı  
-![Yazı Detayı]()
+<img width="928" height="405" alt="Image" src="https://github.com/user-attachments/assets/8ff54272-a84a-4c16-8ccc-742b2711a429" />
 
 ### Yazı Düzenleme
-![Yazı Düzenleme](C:\Users\bngs0\OneDrive\Masaüstü\DEVPULSE\f5.png)
+<img width="635" height="410" alt="Image" src="https://github.com/user-attachments/assets/152543ae-8540-444b-8c8a-e54235ca2b9d" />
 
 ### Kayıt / Giriş
-![Auth Ekranı]()
+<img width="959" height="412" alt="Image" src="https://github.com/user-attachments/assets/865213c1-490d-47be-ad53-c8e505983bbd" />
 
 
 ---
