@@ -27,3 +27,11 @@ app.use('/api/auth', require('./routes/auth.routes'));
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Sunucu ${PORT} portunda başlatıldı`));
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Yakalanmayan Promise Reddi:', reason);
+});
+
+process.on('uncaughtException', (err) => {
+  console.error('Yakalanmayan Hata:', err);
+});
